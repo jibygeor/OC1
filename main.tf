@@ -1,6 +1,4 @@
 # veriable names
-variable "aws_access_key" {}
-variable "aws_secret_key" {}
 variable "Devops_AMIS" {type="map"}
 variable "cidr_blocks" {type="map"}
 variable "AppNames" {  type="map" }
@@ -13,8 +11,6 @@ variable "poc_to_port" {}
 
 # Configure the AWS Provider
 provider "aws" {
-  access_key = "${var.aws_access_key}"
-  secret_key = "${var.aws_secret_key}"
   region     = "us-east-1"
 }
 
