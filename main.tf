@@ -1,4 +1,4 @@
-# veriable names
+# variable names 
 variable "Devops_AMIS" {type="map"}
 variable "cidr_blocks" {type="map"}
 variable "AppNames" {  type="map" }
