@@ -79,7 +79,7 @@ resource "aws_instance" "ec2Linux" {
                sudo yum update -y
                sudo yum install httpd -y
                sudo service httpd start
-               echo "Harris Demo 1- Local Control Portal- After CI Trigger" > /var/www/html/index.html
+               echo "Harris Demo 1- Local Control Portal- Before CI Trigger" > /var/www/html/index.html
                sudo chkconfig httpd on
                hostname -f >> /var/www/html/index.html
               EOF
